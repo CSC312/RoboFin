@@ -8,7 +8,7 @@ namespace RoboFin
         {
             InitializeComponent();
 
-            MainPage = new RoboFinPage();
+            MainPage = new NavigationPage(new RoboFinPage());
         }
 
         protected override void OnStart()
