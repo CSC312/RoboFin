@@ -1,4 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:RoboFin" x:Class="RoboFin.RoboFinPage">
-    <Label Text="Welcome to Xamarin Forms!" VerticalOptions="Center" HorizontalOptions="Center" />
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:RoboFin" BackgroundColor="Red" x:Class="RoboFin.RoboFinPage">
+    <StackLayout HorizontalOptions="CenterAndExpand">
+         <Label Text="Welcome to Xamarin Forms!" HorizontalOptions="Center" />
+    </StackLayout>
+    <StackLayout VerticalOptions="Center">
+        <Button x:Name="logInButton" Text="Log In" HorizontalOptions="Center" WidthRequest="120">
+        </Button>
+        <Button x:Name="signUpButton" Text="Sign Up" HorizontalOptions="Center" WidthRequest="120">
+        </Button>
+    </StackLayout>
 </ContentPage>
