@@ -13,6 +13,11 @@ namespace RoboFin
                 await Navigation.PushAsync(new logInPage());
             };
 
+            signUpButton.Clicked += async (sender, e) => {
+
+                await Navigation.PushAsync(new signupPage());
+            };
+
         }
 
     }
