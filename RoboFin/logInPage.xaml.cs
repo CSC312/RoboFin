@@ -10,6 +10,12 @@ namespace RoboFin
         public logInPage()
         {
             InitializeComponent();
+
+            logUserButton.Clicked += async (sender, e) => {
+
+                await Navigation.PushAsync(new HomePage());
+            };
+
         }
     }
 }
