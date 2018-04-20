@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" NavigationPage.HasNavigationBar="false" BackgroundColor="{StaticResource redColor}" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="RoboFin.logInPage">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout VerticalOptions="CenterAndExpand">
             <StackLayout HorizontalOptions="CenterAndExpand">
                 <Label>Log In</Label>
             </StackLayout>
-            <StackLayout>
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
                 <Grid Padding="0,10,0,0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="40*" />
@@ -15,17 +15,18 @@
                         <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
                     <Label Text="Username" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" />
-                    <Entry WidthRequest="200" Grid.Row="0" Grid.Column="1">
+                    <Entry x:Name="usrnameField" WidthRequest="200" Grid.Row="0" Grid.Column="1">
                     </Entry>
                     <Label Text="Password" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" />
-                    <Entry WidthRequest="200" IsPassword="true" Grid.Row="1" Grid.Column="1" />
+                    <Entry x:Name="pwdField" WidthRequest="200" IsPassword="true" Grid.Row="1" Grid.Column="1" />
                 </Grid>
             </StackLayout>
-            <StackLayout HorizontalOptions="Center">
+            <StackLayout HorizontalOptions="Center" Padding="0,6,0,0">
                 <Label Text="Forgot Your Password?"></Label>
             </StackLayout>
             <StackLayout HorizontalOptions="Center">
-                <Button x:Name="logUserButton" Text="Log Me In"></Button>
+                <Button x:Name="logUserButton" Text="Log Me In" WidthRequest="150"></Button>
+                <Label x:Name="errorLabel" Text="" IsVisible="false"></Label>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
