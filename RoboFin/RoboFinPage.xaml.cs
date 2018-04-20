@@ -8,6 +8,12 @@ namespace RoboFin
         {
             InitializeComponent();
 
+            logInButton.Clicked += async (sender, e) => {
+
+                await Navigation.PushAsync(new logInPage());
+            };
+
         }
+
     }
 }
