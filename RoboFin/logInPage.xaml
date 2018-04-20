@@ -5,8 +5,8 @@
             <StackLayout HorizontalOptions="CenterAndExpand">
                 <Label>Log In</Label>
             </StackLayout>
-            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-                <Grid Padding="0,10,0,0">
+            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+                <Grid Padding="0,10,5,0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="40*" />
                         <ColumnDefinition Width="60*" />
