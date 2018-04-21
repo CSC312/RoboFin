@@ -46,6 +46,42 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="MasterPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContactsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Investing.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BudgetPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LearningPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BestOptionsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NearbyBanksPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvestmentOverviewPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -66,6 +102,35 @@
     </Compile>
     <Compile Include="bankingPage.xaml.cs">
       <DependentUpon>bankingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Checkbox.cs" />
+    <Compile Include="MasterPageItem.cs" />
+    <Compile Include="MasterPage.xaml.cs">
+      <DependentUpon>MasterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContactsPage.xaml.cs">
+      <DependentUpon>ContactsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Investing.xaml.cs">
+      <DependentUpon>Investing.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BudgetPage.xaml.cs">
+      <DependentUpon>BudgetPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LearningPage.xaml.cs">
+      <DependentUpon>LearningPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BestOptionsPage.xaml.cs">
+      <DependentUpon>BestOptionsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NearbyBanksPage.xaml.cs">
+      <DependentUpon>NearbyBanksPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InvestmentOverviewPage.xaml.cs">
+      <DependentUpon>InvestmentOverviewPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -5,6 +5,7 @@
              <!-- Application resource dictionary -->
         <Color x:Key="redColor">Red</Color>
         <Color x:Key="grayColor">Gray</Color>
+        <Color x:Key="whiteColor">White</Color>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

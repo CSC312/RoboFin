@@ -22,7 +22,7 @@ namespace RoboFin
                     }
                     else{
                         errorLabel.IsVisible = false;
-                        await Navigation.PushAsync(new HomePage());
+                        await Navigation.PushAsync(new MainPage());
                     }
 
                 }
