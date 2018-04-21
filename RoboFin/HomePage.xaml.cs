@@ -10,6 +10,11 @@ namespace RoboFin
         public HomePage()
         {
             InitializeComponent();
+
+            bankingButton.Clicked += async (sender, e) => {
+
+                await Navigation.PushAsync(new bankingPage());
+            };
         }
     }
 }

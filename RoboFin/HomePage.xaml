@@ -4,10 +4,10 @@
         <StackLayout>
             <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
                 <Label>Please Select A Service</Label>
-                <Button Text="Banking"></Button>
-                <Button Text="Investing"></Button>
-                <Button Text="Budgeting"></Button>
-                <Button Text="Help"></Button>
+                <Button x:Name="bankingButton" Text="Banking"></Button>
+                <Button x:Name="investingButton" Text="Investing"></Button>
+                <Button x:Name="budgetingButton" Text="Budgeting"></Button>
+                <Button x:Name="helpButton" Text="Help"></Button>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
