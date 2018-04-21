@@ -5,13 +5,11 @@ using Xamarin.Forms;
 
 namespace RoboFin
 {
-    public partial class HomePage : ContentPage
+    public partial class NearbyBanksPage : ContentPage
     {
-        public HomePage()
+        public NearbyBanksPage()
         {
             InitializeComponent();
-
-
         }
     }
 }

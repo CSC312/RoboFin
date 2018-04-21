@@ -1,13 +1,14 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 
 using Xamarin.Forms;
 
 namespace RoboFin
 {
-    public partial class HomePage : ContentPage
+    public partial class BestOptionsPage : ContentPage
     {
-        public HomePage()
+        public BestOptionsPage()
         {
             InitializeComponent();
 

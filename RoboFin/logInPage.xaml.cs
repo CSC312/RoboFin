@@ -14,21 +14,21 @@ namespace RoboFin
             logUserButton.Clicked += async (sender, e) => {
                 string usrname = usrnameField.Text;
                 string pwd = pwdField.Text;
-                if(checkCredentials(usrname,pwd) == false){
-                    errorLabel.Text = "Incorrect Username/Password Combination!";
-                    errorLabel.IsVisible = true;
+                if( usrname != "" && pwd != ""){
+                    if (usrname != "a" && pwd != "a")
+                    {
+                        errorLabel.Text = "Incorrect Username/Password Combination!";
+                        errorLabel.IsVisible = true;
+                    }
+                    else{
+                        errorLabel.IsVisible = false;
+                        await Navigation.PushAsync(new MainPage());
+                    }
+
                 }
-                errorLabel.IsVisible = false;
-                await Navigation.PushAsync(new HomePage());
             };
 
         }
 
-        public bool checkCredentials(string username, string password){
-            if(username != "a" && password != "a" ){
-                return false;
-            }
-            return true;
-        }
     }
 }

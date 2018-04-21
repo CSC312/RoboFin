@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" Title="Bank" xmlns:local="clr-namespace:RoboFin" BackgroundColor="{StaticResource whiteColor}" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="RoboFin.bankingPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Padding="5,20,5,20" HorizontalOptions="CenterAndExpand" Orientation="Horizontal" VerticalOptions="Start">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Image VerticalOptions="Center" Source="user.jpg" Grid.Row="0" Grid.Column="0" WidthRequest="80" />
+                </Grid>
+                <StackLayout Orientation="Vertical" HeightRequest="50">
+                    <Label Text="Welcome To Banking!" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" />
+                    <Button x:Name="learnMoreBtn" Text="Learn More About Banking" Grid.Row="1" HeightRequest="50" Grid.Column="1"></Button>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Padding="10,20,5,10">
+                    <Label Text="User the slider below to enter your salary."></Label>
+                 <Slider x:Name="slider" VerticalOptions="CenterAndExpand" Minimum="0" Maximum="5000" />
+                 <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30*" />
+                        <ColumnDefinition Width="70*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Entry Text="{Binding Value, StringFormat='R {0:F0}'}" BindingContext="{x:Reference Name=slider}" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" WidthRequest="250" HorizontalOptions="StartAndExpand" />
+                    <Label Text="per month" Grid.Row="0" Grid.Column="1" WidthRequest="50" VerticalOptions="End" />
+                </Grid>
+            </StackLayout>
+            <StackLayout Padding="10,10,5,0">
+                <Label Text="How Often Do You Draw Money?" HorizontalOptions="StartAndExpand"></Label>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30*" />
+                        <ColumnDefinition Width="70*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <local:Checkbox Color="Blue" IsChecked="true" Grid.Row="0" Grid.Column="0"/>
+                    <Label Text="Daily" Grid.Row="0" Grid.Column="1" HorizontalOptions="Start" />
+
+                    <local:Checkbox Color="Blue" IsChecked="false" Grid.Row="1" Grid.Column="0"/>
+                    <Label Text="Weekly" Grid.Row="1" Grid.Column="1" HorizontalOptions="Start" />
+
+                    <local:Checkbox Color="Blue" IsChecked="false" Grid.Row="2" Grid.Column="0"/>
+                    <Label Text="Varies" Grid.Row="2" Grid.Column="1" HorizontalOptions="Start" />
+                    
+                </Grid>
+            </StackLayout>
+            <StackLayout Padding="10,10,5,0">
+                <Button x:Name="optionBtn" Text="Show Me The Best Option For Me"></Button>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
